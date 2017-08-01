@@ -42,5 +42,77 @@ button:hover{
   background: white;
 }
 footer{
-  display: inline-block;
+  float: right;
+  display: inline-table;
+  word-wrap: break-word;
+}
+
+
+@media (min-width:320px)  {
+ /* smartphones, iPhone, portrait 480x320 phones */
+ .wrapper{
+  width:100%;
+  }
+div.tile{
+  width:45%;
+}
+h3{
+  font-size: 0.7em;
+}
+}
+@media (min-width:481px)  {
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+.wrapper{
+  width:100%;
+  }
+div.tile{
+  width:45%;
+}
+ }
+@media (min-width:641px)  {
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+.wrapper{
+  width:100%;
+  }
+div.tile{
+  width:31%;
+}
+h3{
+  font-size: 1em;
+}
+ }
+@media (min-width:961px)  {
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+.wrapper{
+  width:100%;
+  }
+div.tile{
+  width:24%;
+}
+ }
+@media (min-width:1025px) {
+/* big landscape tablets, laptops, and desktops */
+.wrapper{
+  width:80%;
+  }
+div.tile{
+  width:24%;
+}
+}
+@media (min-width:1281px) {
+/* hi-res laptops and desktops */
+
+}
+@media (min-width:1441px) {
+/* hi-res laptops and desktops */
+.wrapper{
+  width:80%;
+  }
+div.tile{
+  width:17%;
+}
+}
+@media (min-width:2561px) {
+/* hi-res laptops and desktops */
+
 }
