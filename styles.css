@@ -1,0 +1,46 @@
+/*Author: iMahesh
+Date: 08-01-2017
+ */
+* {box-sizing: border-box;}
+html{
+  font-family: 'open sans',san-serif;
+  color: black;
+  background: whitesmoke;
+  margin: 0;
+  padding:0;
+}
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+div.tile{
+  float: left;
+  width: 23%;
+  min-height: 180px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 10px;
+}
+i.fa{
+  font-size: 4em;
+}
+button{
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border: 1px solid grey;
+  padding: 4px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: grey;
+}
+button:hover{
+  background: white;
+}
+footer{
+  display: inline-block;
+}

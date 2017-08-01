@@ -1,0 +1,43 @@
+<!-- /*Author: iMahesh
+Date: 08-01-2017
+ */ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animate.css Live Preview</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This site gives all the animations preview for Animate.CSS work by Mr.Daniel Eden.">
+    <meta name="keywords" content="Animate css, Animate.css, Animate css demo, Animate css live preview">
+    <meta name="author" content="iMahesh">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-app="myApp">
+    <div class="wrapper" ng-controller="myController">
+        <h1>Animate.CSS Live Preview</h1>
+        <div ng-repeat="x in animations">
+            <div class="tile">
+                <h3>{{x.animation}}</h3>
+                <i id='{{x.animation}}' class="fa fa-github-alt" aria-hidden="true"></i>
+                <br/>
+                <button id="animateBtn" ng-click="animate(x.animation)">Animate</button>
+            </div>
+        </div>
+        <footer>
+            <a href="https://raw.github.com/daneden/animate.css/master/animate.css" download="animate.css">Download Animate.css</a> 
+           <p > Daniel's work on Animate.css: <a href="//github.com/daneden/animate.css" target="blanc">View on GitHub</a></p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="animated.js"></script>
+</body>
+
+</html>
