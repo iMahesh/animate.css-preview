@@ -84,7 +84,8 @@ app.controller('myController',function($scope){
         element.classList.add('animated',animation);
         var timeOut = setTimeout(function(){
             element.classList.remove('animated',animation)
-        },1000)
+        },2000)
+		
     }
 });
 
